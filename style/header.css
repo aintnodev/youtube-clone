@@ -1,0 +1,204 @@
+/* general */
+
+header {
+	display: flex;
+	height: 56px;
+	justify-content: space-between;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(215, 215, 215);
+	border-bottom-width: 1px;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+	display: flex;
+	align-items: center;
+}
+
+.left-section {
+	margin-left: 24px;
+	margin-right: 96px;
+}
+
+.middle-section {
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-section {
+	justify-content: space-between;
+	margin-left: 96px;
+	margin-right: 20px;
+}
+
+/* left */
+
+.hamburger-menu-container {
+	height: 24px;
+	margin-right: 24px;
+}
+
+.youtube-logo-container {
+	height: 20px;
+}
+
+.youtube-logo-container img {
+	height: 100%;
+}
+
+.hamburger-menu-container img {
+	height: 100%;
+}
+
+/* middle */
+
+.search-bar {
+	flex: 1;
+	width: 50px;
+	max-width: 380px;
+	height: 38.67px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(190, 190, 190);
+	box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+	padding: 0px 8px 0px 12px;
+	font-size: 16px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.search-button-container {
+	height: 40px;
+	width: 56px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(190, 190, 190);
+	border-radius: 0px 20px 20px 0px;
+	margin-left: -1px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.voice-search-button-container {
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	border-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.search-button-container img {
+	height: 24px;
+}
+
+.voice-search-button-container img {
+	height: 24px;
+}
+
+/* right */
+
+.create-button-container {
+	height: 40px;
+	width: 40px;
+	margin-right: 8px;
+}
+
+.create-button-container:hover {
+	background-color: rgb(225, 225, 225);
+	border-radius: 20px;
+}
+
+.notification-button-container {
+	height: 40px;
+	width: 40px;
+	margin-right: 24px;
+	position: relative;
+}
+
+.notification-button-container div {
+	position: absolute;
+	top: 1px;
+	right: 3px;
+	font-size: 10px;
+	background-color: rgb(200, 0, 0);
+	border: solid white;
+	color: white;
+	padding: 1px 4px;
+	border-radius: 12px;
+}
+
+.notification-button-container:hover {
+	background-color: rgb(225, 225, 225);
+	border-radius: 20px;
+}
+
+.my-channel-button-container {
+	height: 32px;
+}
+
+.create-button-container img {
+	height: 24px;
+	width: 24px;
+	padding: 8px 8px 8px 8px;
+}
+
+.notification-button-container img {
+	height: 24px;
+	width: 24px;
+	padding: 8px 8px 8px 8px;
+}
+
+.my-channel-button-container img {
+	height: 32px;
+	width: 32px;
+	object-fit: cover;
+	border-radius: 16px;
+}
+
+@media (max-width: 720px) {
+
+	.hamburger-menu-container,
+	.hamburger-menu-container img {
+		width: 0;
+		margin: 0;
+	}
+
+	.search-bar {
+		width: 0;
+		padding: 0;
+		opacity: 0;
+		border-style: none;
+		pointer-events: none;
+	}
+
+	.search-button-container {
+		width: 40px;
+		border-style: none;
+		border-radius: 20px;
+		background-color: white;
+		margin-right: 24px;
+	}
+
+	.voice-search-button-container,
+	.voice-search-button-container img {
+		width: 0;
+		padding: 0;
+	}
+
+	.right-section {
+		width: 0;
+		margin: 0;
+	}
+}
