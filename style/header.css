@@ -167,7 +167,7 @@ header {
 	border-radius: 16px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
 
 	.hamburger-menu-container,
 	.hamburger-menu-container img {
