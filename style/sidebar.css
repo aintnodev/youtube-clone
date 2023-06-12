@@ -30,7 +30,7 @@ nav {
     font-size: 10px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
 
     nav,
     .navbar-icon,
