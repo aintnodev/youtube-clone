@@ -9,7 +9,7 @@ main {
     column-gap: 16px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
     main {
         padding: 80px 24px 0px 24px;
         ;
@@ -20,13 +20,7 @@ main {
     }
 }
 
-@media (min-width: 721px) and (max-width: 959px) {
-    .video-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 960px) and (max-width: 1439px) {
+@media (min-width: 961px) and (max-width: 1439px) {
     .video-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
